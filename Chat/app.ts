@@ -36,6 +36,7 @@ const model = new ChatOpenAI({
 });
 
 
+
 const chain = RetrievalQAChain.fromLLM(
   model,
   vectorStoreRetriever
@@ -43,4 +44,5 @@ const chain = RetrievalQAChain.fromLLM(
 
 const question = "If a ball is thrown upwards, it slows down, stops momentarily, and then falls back to the ground. Name the forces acting on the ball and specify their directions. (i) During its upward motion (ii) During its downward motion (iii) At its topmost position";
 const res = await chain.call({ query: question });
+
 console.log({ question: question, answer: res.text });
