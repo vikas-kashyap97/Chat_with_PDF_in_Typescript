@@ -1,5 +1,6 @@
 # Chat with PDFs using LangChain + OpenAI
 
+
 This project lets you **upload a PDF, chunk its contents, embed them, and query it** using OpenAI’s `gpt-3.5-turbo` model with retrieval-augmented generation (RAG).  
 It’s built with **TypeScript, LangChain, and ts-node**.
 
